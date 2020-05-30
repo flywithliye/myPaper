@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>风速时间序列来源</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+
+</head>
+<body>
+    <div id="ddb96f8a883c4fa9881fc4004bf3798a" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+    <script>
+        var chart_ddb96f8a883c4fa9881fc4004bf3798a = echarts.init(
+            document.getElementById('ddb96f8a883c4fa9881fc4004bf3798a'), 'light', {renderer: 'canvas'});
+        var option_ddb96f8a883c4fa9881fc4004bf3798a = {
+    "backgroundColor": "white",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "scatter",
+            "name": "\u98ce\u901f\u6570\u636e\u6765\u6e90",
+            "coordinateSystem": "geo",
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "\u4e4c\u9c81\u6728\u9f50",
+                    "value": [
+                        87.68,
+                        43.77,
+                        "\u8fbe\u5742\u57ce\u533a"
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u98ce\u901f\u6570\u636e\u6765\u6e90"
+            ],
+            "selected": {
+                "\u98ce\u901f\u6570\u636e\u6765\u6e90": true
+            },
+            "show": true,
+            "right": "0%",
+            "top": "5%",
+            "orient": "horizontal",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "textStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u98ce\u901f\u65f6\u95f4\u5e8f\u5217\u6765\u6e90",
+            "subtext": "\u6570\u636e\u6765\u6e90\uff1a\u65b0\u7586\u7ef4\u543e\u5c14\u81ea\u6cbb\u533a\u4e4c\u9c81\u6728\u9f50\u5e02\u8fbe\u5742\u57ce\u533a",
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "fontSize": 25
+            }
+        }
+    ],
+    "geo": {
+        "map": "china",
+        "roam": true,
+        "emphasis": {}
+    }
+};
+        chart_ddb96f8a883c4fa9881fc4004bf3798a.setOption(option_ddb96f8a883c4fa9881fc4004bf3798a);
+    </script>
+</body>
+</html>
