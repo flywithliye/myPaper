@@ -2,16 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>观测风速时间序列</title>
+    <title>实际风速时间序列</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 
 </head>
 <body>
-    <div id="3fc78e0b59e1468e8499c985c21119d3" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+    <div id="d0799fe943164c38a90783c9dc5f8d89" class="chart-container" style="width:1400px; height:700px;margin:auto;top:0px"></div>
     <script>
-        var chart_3fc78e0b59e1468e8499c985c21119d3 = echarts.init(
-            document.getElementById('3fc78e0b59e1468e8499c985c21119d3'), 'light', {renderer: 'canvas'});
-        var option_3fc78e0b59e1468e8499c985c21119d3 = {
+        var chart_d0799fe943164c38a90783c9dc5f8d89 = echarts.init(
+            document.getElementById('d0799fe943164c38a90783c9dc5f8d89'), 'light', {renderer: 'canvas'});
+        var option_d0799fe943164c38a90783c9dc5f8d89 = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -6072,7 +6072,7 @@
                     "show": true,
                     "position": "bottom",
                     "margin": 8,
-                    "fontSize": 15,
+                    "fontSize": 17,
                     "formatter": "\u8bad\u7ec3<--{c}-->\u6d4b\u8bd5",
                     "backgroundColor": "white"
                 },
@@ -6117,7 +6117,7 @@
             "itemWidth": 25,
             "itemHeight": 14,
             "textStyle": {
-                "fontSize": 12
+                "fontSize": 17
             }
         }
     ],
@@ -6141,7 +6141,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -6162,11 +6171,14 @@
     "yAxis": [
         {
             "type": "value",
-            "name": "\u89c2\u6d4b\u98ce\u901f",
+            "name": "\u98ce\u901f",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -6177,6 +6189,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -6184,7 +6197,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -6197,18 +6210,21 @@
     ],
     "title": [
         {
-            "text": "\u89c2\u6d4b\u98ce\u901f\u65f6\u95f4\u5e8f\u5217",
+            "text": "\u5b9e\u9645\u98ce\u901f\u65f6\u95f4\u5e8f\u5217",
             "subtext": "\u6570\u636e\u6765\u6e90\uff1a\u65b0\u7586\u7ef4\u543e\u5c14\u81ea\u6cbb\u533a\u4e4c\u9c81\u6728\u9f50\u5e02\u8fbe\u5742\u57ce\u533a",
             "left": "center",
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "toolbox": {
-        "show": true,
+        "show": false,
         "orient": "vertical",
         "itemSize": 15,
         "itemGap": 10,
@@ -6282,15 +6298,6 @@
     "dataZoom": [
         {
             "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 9,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
-        {
-            "show": true,
             "type": "inside",
             "realtime": true,
             "start": 0,
@@ -6300,7 +6307,7 @@
         }
     ]
 };
-        chart_3fc78e0b59e1468e8499c985c21119d3.setOption(option_3fc78e0b59e1468e8499c985c21119d3);
+        chart_d0799fe943164c38a90783c9dc5f8d89.setOption(option_d0799fe943164c38a90783c9dc5f8d89);
     </script>
 </body>
 </html>
