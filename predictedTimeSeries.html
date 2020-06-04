@@ -40,21 +40,21 @@
         }
     </style>
     <div class="tab">
-            <button class="tablinks" onclick="showChart(event, '474dc3b2bb204af4a8ccaa20434767a3')">线性回归(LR)</button>
-            <button class="tablinks" onclick="showChart(event, '16816c54d09d4a18bb2c157fbcf16d7f')">决策树(DT)</button>
-            <button class="tablinks" onclick="showChart(event, '8b1ccb79e07f48f79cda3d231247f88a')">随机森林(RF)</button>
-            <button class="tablinks" onclick="showChart(event, '0c962183403f4d2d91d9df4fb7647ccb')">梯度提升树(GBDT)</button>
-            <button class="tablinks" onclick="showChart(event, '3df8730b43cf46fe88e9ace151552990')">长短期记忆网络(LSTM)</button>
-            <button class="tablinks" onclick="showChart(event, '35e8c814919b4b4b9b89dae269d103e4')">EMD-LSTM</button>
-            <button class="tablinks" onclick="showChart(event, '2edd34f58d82466ebfcc01b7a2d2392c')">CEEMDAN-LSTM</button>
+            <button class="tablinks" onclick="showChart(event, 'd04004ef37994dce8eb03c49edba7718')">线性回归(LR)</button>
+            <button class="tablinks" onclick="showChart(event, 'ce048dfeecdd402a8a23a666f964c0e1')">决策树回归(DT)</button>
+            <button class="tablinks" onclick="showChart(event, '7b8c24df6b0a41c1b76c4768ec3f7d4f')">随机森林回归(RF)</button>
+            <button class="tablinks" onclick="showChart(event, '81e0f13588b6406e847d710a71c4e01c')">梯度提升树回归(GBDT)</button>
+            <button class="tablinks" onclick="showChart(event, 'aa85e5d6d7754df1a415e2d365fdf73f')">长短期记忆网络(LSTM)</button>
+            <button class="tablinks" onclick="showChart(event, '86aa6ab465a2488f9ffb653af7aacd7e')">混合模型(EMD-LSTM)</button>
+            <button class="tablinks" onclick="showChart(event, '42f9f6224ac04cc98ab37ffd94ad3536')">混合模型(CEEMDAN-LSTM)</button>
     </div>
 
     <div class="box">
-                <div id="474dc3b2bb204af4a8ccaa20434767a3" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+                <div id="d04004ef37994dce8eb03c49edba7718" class="chart-container" style="width:1100px; height:680px;margin:auto;top:0px"></div>
     <script>
-        var chart_474dc3b2bb204af4a8ccaa20434767a3 = echarts.init(
-            document.getElementById('474dc3b2bb204af4a8ccaa20434767a3'), 'light', {renderer: 'canvas'});
-        var option_474dc3b2bb204af4a8ccaa20434767a3 = {
+        var chart_d04004ef37994dce8eb03c49edba7718 = echarts.init(
+            document.getElementById('d04004ef37994dce8eb03c49edba7718'), 'light', {renderer: 'canvas'});
+        var option_d04004ef37994dce8eb03c49edba7718 = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -6169,8 +6169,8 @@
                 "\u9884\u6d4b\u98ce\u901f": true
             },
             "show": true,
-            "right": "0%",
-            "top": "5%",
+            "right": "10%",
+            "top": "10%",
             "orient": "horizontal",
             "padding": 5,
             "itemGap": 10,
@@ -6186,7 +6186,7 @@
         "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "textStyle": {
             "fontSize": 14
@@ -6201,7 +6201,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -6227,6 +6236,9 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -6237,6 +6249,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -6246,7 +6259,7 @@
             "max": 4.5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -6265,20 +6278,14 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 9,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
         {
             "show": true,
             "type": "inside",
@@ -6290,13 +6297,13 @@
         }
     ]
 };
-        chart_474dc3b2bb204af4a8ccaa20434767a3.setOption(option_474dc3b2bb204af4a8ccaa20434767a3);
+        chart_d04004ef37994dce8eb03c49edba7718.setOption(option_d04004ef37994dce8eb03c49edba7718);
     </script>
-                <div id="16816c54d09d4a18bb2c157fbcf16d7f" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+                <div id="ce048dfeecdd402a8a23a666f964c0e1" class="chart-container" style="width:1100px; height:680px;margin:auto;top:0px"></div>
     <script>
-        var chart_16816c54d09d4a18bb2c157fbcf16d7f = echarts.init(
-            document.getElementById('16816c54d09d4a18bb2c157fbcf16d7f'), 'light', {renderer: 'canvas'});
-        var option_16816c54d09d4a18bb2c157fbcf16d7f = {
+        var chart_ce048dfeecdd402a8a23a666f964c0e1 = echarts.init(
+            document.getElementById('ce048dfeecdd402a8a23a666f964c0e1'), 'light', {renderer: 'canvas'});
+        var option_ce048dfeecdd402a8a23a666f964c0e1 = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -12411,8 +12418,8 @@
                 "\u9884\u6d4b\u98ce\u901f": true
             },
             "show": true,
-            "right": "0%",
-            "top": "5%",
+            "right": "10%",
+            "top": "10%",
             "orient": "horizontal",
             "padding": 5,
             "itemGap": 10,
@@ -12428,7 +12435,7 @@
         "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "textStyle": {
             "fontSize": 14
@@ -12443,7 +12450,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -12469,6 +12485,9 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -12479,6 +12498,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -12488,7 +12508,7 @@
             "max": 4.5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -12507,20 +12527,14 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 100,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
         {
             "show": true,
             "type": "inside",
@@ -12532,13 +12546,13 @@
         }
     ]
 };
-        chart_16816c54d09d4a18bb2c157fbcf16d7f.setOption(option_16816c54d09d4a18bb2c157fbcf16d7f);
+        chart_ce048dfeecdd402a8a23a666f964c0e1.setOption(option_ce048dfeecdd402a8a23a666f964c0e1);
     </script>
-                <div id="8b1ccb79e07f48f79cda3d231247f88a" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+                <div id="7b8c24df6b0a41c1b76c4768ec3f7d4f" class="chart-container" style="width:1100px; height:680px;margin:auto;top:0px"></div>
     <script>
-        var chart_8b1ccb79e07f48f79cda3d231247f88a = echarts.init(
-            document.getElementById('8b1ccb79e07f48f79cda3d231247f88a'), 'light', {renderer: 'canvas'});
-        var option_8b1ccb79e07f48f79cda3d231247f88a = {
+        var chart_7b8c24df6b0a41c1b76c4768ec3f7d4f = echarts.init(
+            document.getElementById('7b8c24df6b0a41c1b76c4768ec3f7d4f'), 'light', {renderer: 'canvas'});
+        var option_7b8c24df6b0a41c1b76c4768ec3f7d4f = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -18653,8 +18667,8 @@
                 "\u9884\u6d4b\u98ce\u901f": true
             },
             "show": true,
-            "right": "0%",
-            "top": "5%",
+            "right": "10%",
+            "top": "10%",
             "orient": "horizontal",
             "padding": 5,
             "itemGap": 10,
@@ -18670,7 +18684,7 @@
         "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "textStyle": {
             "fontSize": 14
@@ -18685,7 +18699,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -18711,6 +18734,9 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -18721,6 +18747,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -18730,7 +18757,7 @@
             "max": 4.5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -18749,20 +18776,14 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 100,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
         {
             "show": true,
             "type": "inside",
@@ -18774,13 +18795,13 @@
         }
     ]
 };
-        chart_8b1ccb79e07f48f79cda3d231247f88a.setOption(option_8b1ccb79e07f48f79cda3d231247f88a);
+        chart_7b8c24df6b0a41c1b76c4768ec3f7d4f.setOption(option_7b8c24df6b0a41c1b76c4768ec3f7d4f);
     </script>
-                <div id="0c962183403f4d2d91d9df4fb7647ccb" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+                <div id="81e0f13588b6406e847d710a71c4e01c" class="chart-container" style="width:1100px; height:680px;margin:auto;top:0px"></div>
     <script>
-        var chart_0c962183403f4d2d91d9df4fb7647ccb = echarts.init(
-            document.getElementById('0c962183403f4d2d91d9df4fb7647ccb'), 'light', {renderer: 'canvas'});
-        var option_0c962183403f4d2d91d9df4fb7647ccb = {
+        var chart_81e0f13588b6406e847d710a71c4e01c = echarts.init(
+            document.getElementById('81e0f13588b6406e847d710a71c4e01c'), 'light', {renderer: 'canvas'});
+        var option_81e0f13588b6406e847d710a71c4e01c = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -24895,8 +24916,8 @@
                 "\u9884\u6d4b\u98ce\u901f": true
             },
             "show": true,
-            "right": "0%",
-            "top": "5%",
+            "right": "10%",
+            "top": "10%",
             "orient": "horizontal",
             "padding": 5,
             "itemGap": 10,
@@ -24912,7 +24933,7 @@
         "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "textStyle": {
             "fontSize": 14
@@ -24927,7 +24948,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -24953,6 +24983,9 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -24963,6 +24996,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -24972,7 +25006,7 @@
             "max": 4.5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -24991,20 +25025,14 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 100,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
         {
             "show": true,
             "type": "inside",
@@ -25016,13 +25044,13 @@
         }
     ]
 };
-        chart_0c962183403f4d2d91d9df4fb7647ccb.setOption(option_0c962183403f4d2d91d9df4fb7647ccb);
+        chart_81e0f13588b6406e847d710a71c4e01c.setOption(option_81e0f13588b6406e847d710a71c4e01c);
     </script>
-                <div id="3df8730b43cf46fe88e9ace151552990" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+                <div id="aa85e5d6d7754df1a415e2d365fdf73f" class="chart-container" style="width:1100px; height:680px;margin:auto;top:0px"></div>
     <script>
-        var chart_3df8730b43cf46fe88e9ace151552990 = echarts.init(
-            document.getElementById('3df8730b43cf46fe88e9ace151552990'), 'light', {renderer: 'canvas'});
-        var option_3df8730b43cf46fe88e9ace151552990 = {
+        var chart_aa85e5d6d7754df1a415e2d365fdf73f = echarts.init(
+            document.getElementById('aa85e5d6d7754df1a415e2d365fdf73f'), 'light', {renderer: 'canvas'});
+        var option_aa85e5d6d7754df1a415e2d365fdf73f = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -31137,8 +31165,8 @@
                 "\u9884\u6d4b\u98ce\u901f": true
             },
             "show": true,
-            "right": "0%",
-            "top": "5%",
+            "right": "10%",
+            "top": "10%",
             "orient": "horizontal",
             "padding": 5,
             "itemGap": 10,
@@ -31154,7 +31182,7 @@
         "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "textStyle": {
             "fontSize": 14
@@ -31169,7 +31197,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -31195,6 +31232,9 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -31205,6 +31245,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -31214,7 +31255,7 @@
             "max": 4.5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -31233,20 +31274,14 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 100,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
         {
             "show": true,
             "type": "inside",
@@ -31258,13 +31293,13 @@
         }
     ]
 };
-        chart_3df8730b43cf46fe88e9ace151552990.setOption(option_3df8730b43cf46fe88e9ace151552990);
+        chart_aa85e5d6d7754df1a415e2d365fdf73f.setOption(option_aa85e5d6d7754df1a415e2d365fdf73f);
     </script>
-                <div id="35e8c814919b4b4b9b89dae269d103e4" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+                <div id="86aa6ab465a2488f9ffb653af7aacd7e" class="chart-container" style="width:1100px; height:680px;margin:auto;top:0px"></div>
     <script>
-        var chart_35e8c814919b4b4b9b89dae269d103e4 = echarts.init(
-            document.getElementById('35e8c814919b4b4b9b89dae269d103e4'), 'light', {renderer: 'canvas'});
-        var option_35e8c814919b4b4b9b89dae269d103e4 = {
+        var chart_86aa6ab465a2488f9ffb653af7aacd7e = echarts.init(
+            document.getElementById('86aa6ab465a2488f9ffb653af7aacd7e'), 'light', {renderer: 'canvas'});
+        var option_86aa6ab465a2488f9ffb653af7aacd7e = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -37379,8 +37414,8 @@
                 "\u9884\u6d4b\u98ce\u901f": true
             },
             "show": true,
-            "right": "0%",
-            "top": "5%",
+            "right": "10%",
+            "top": "10%",
             "orient": "horizontal",
             "padding": 5,
             "itemGap": 10,
@@ -37396,7 +37431,7 @@
         "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "textStyle": {
             "fontSize": 14
@@ -37411,7 +37446,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -37437,6 +37481,9 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -37447,6 +37494,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -37456,7 +37504,7 @@
             "max": 4.5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -37475,20 +37523,14 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 100,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
         {
             "show": true,
             "type": "inside",
@@ -37500,13 +37542,13 @@
         }
     ]
 };
-        chart_35e8c814919b4b4b9b89dae269d103e4.setOption(option_35e8c814919b4b4b9b89dae269d103e4);
+        chart_86aa6ab465a2488f9ffb653af7aacd7e.setOption(option_86aa6ab465a2488f9ffb653af7aacd7e);
     </script>
-                <div id="2edd34f58d82466ebfcc01b7a2d2392c" class="chart-container" style="width:960px; height:560px;margin:auto;top:30px"></div>
+                <div id="42f9f6224ac04cc98ab37ffd94ad3536" class="chart-container" style="width:1100px; height:680px;margin:auto;top:0px"></div>
     <script>
-        var chart_2edd34f58d82466ebfcc01b7a2d2392c = echarts.init(
-            document.getElementById('2edd34f58d82466ebfcc01b7a2d2392c'), 'light', {renderer: 'canvas'});
-        var option_2edd34f58d82466ebfcc01b7a2d2392c = {
+        var chart_42f9f6224ac04cc98ab37ffd94ad3536 = echarts.init(
+            document.getElementById('42f9f6224ac04cc98ab37ffd94ad3536'), 'light', {renderer: 'canvas'});
+        var option_42f9f6224ac04cc98ab37ffd94ad3536 = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -43621,8 +43663,8 @@
                 "\u9884\u6d4b\u98ce\u901f": true
             },
             "show": true,
-            "right": "0%",
-            "top": "5%",
+            "right": "10%",
+            "top": "10%",
             "orient": "horizontal",
             "padding": 5,
             "itemGap": 10,
@@ -43638,7 +43680,7 @@
         "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
-            "type": "cross"
+            "type": "line"
         },
         "textStyle": {
             "fontSize": 14
@@ -43653,7 +43695,16 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -43679,6 +43730,9 @@
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
             "axisTick": {
                 "show": true,
@@ -43689,6 +43743,7 @@
                 "show": true,
                 "position": "top",
                 "margin": 8,
+                "fontSize": 17,
                 "formatter": "{value} m/s"
             },
             "inverse": false,
@@ -43698,7 +43753,7 @@
             "max": 4.5,
             "minInterval": 0,
             "splitLine": {
-                "show": true,
+                "show": false,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -43717,20 +43772,14 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ],
     "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 0,
-            "end": 100,
-            "orient": "horizontal",
-            "zoomLock": false
-        },
         {
             "show": true,
             "type": "inside",
@@ -43742,7 +43791,7 @@
         }
     ]
 };
-        chart_2edd34f58d82466ebfcc01b7a2d2392c.setOption(option_2edd34f58d82466ebfcc01b7a2d2392c);
+        chart_42f9f6224ac04cc98ab37ffd94ad3536.setOption(option_42f9f6224ac04cc98ab37ffd94ad3536);
     </script>
     </div>
 
