@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>训练时间对比</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="53d3ebac1ec44307a5f94d31cabd3214" class="chart-container" style="width:800px; height:450px;margin:auto;top:0px"></div>
+    <script>
+        var chart_53d3ebac1ec44307a5f94d31cabd3214 = echarts.init(
+            document.getElementById('53d3ebac1ec44307a5f94d31cabd3214'), 'light', {renderer: 'canvas'});
+        var option_53d3ebac1ec44307a5f94d31cabd3214 = {
+    "backgroundColor": "white",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "name": "LR",
+            "data": [
+                233.8099
+            ],
+            "barCategoryGap": "15%",
+            "barGap": "50%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "DT",
+            "data": [
+                1242.6991
+            ],
+            "barCategoryGap": "15%",
+            "barGap": "50%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "RF",
+            "data": [
+                1748.4609
+            ],
+            "barCategoryGap": "15%",
+            "barGap": "50%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "GBDT",
+            "data": [
+                2205.7808
+            ],
+            "barCategoryGap": "15%",
+            "barGap": "50%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "LSTM",
+            "data": [
+                158.9907
+            ],
+            "barCategoryGap": "15%",
+            "barGap": "50%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "EMD-LSTM",
+            "data": [
+                1250.0479
+            ],
+            "barCategoryGap": "15%",
+            "barGap": "50%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "bar",
+            "name": "CEEMDAN-LSTM",
+            "data": [
+                1269.7414
+            ],
+            "barCategoryGap": "15%",
+            "barGap": "50%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "LR",
+                "DT",
+                "RF",
+                "GBDT",
+                "LSTM",
+                "EMD-LSTM",
+                "CEEMDAN-LSTM"
+            ],
+            "selected": {
+                "LR": true,
+                "DT": true,
+                "RF": true,
+                "GBDT": true,
+                "LSTM": true,
+                "EMD-LSTM": true,
+                "CEEMDAN-LSTM": true
+            },
+            "show": true,
+            "left": "center",
+            "top": "12%",
+            "orient": "horizontal",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "textStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\u8bad\u7ec3\u65f6\u95f4"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u65f6\u95f4 [\u79d2]",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "max": 2600,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u9884\u6d4b\u6a21\u578b\u8bad\u7ec3\u65f6\u95f4\u5bf9\u6bd4",
+            "subtext": "LR DT RF GBDT LSTM EMD-LSTM CEEMDAN-LSTM",
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "fontSize": 25
+            }
+        }
+    ]
+};
+        chart_53d3ebac1ec44307a5f94d31cabd3214.setOption(option_53d3ebac1ec44307a5f94d31cabd3214);
+    </script>
+</body>
+</html>
