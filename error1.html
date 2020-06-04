@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="db2d2ab9b6734d4483157222e11e0faf" class="chart-container" style="width:1400px; height:780px;margin:auto;top:0px"></div>
+    <div id="25c2836f90124d5ea5c0eacec9449cc8" class="chart-container" style="width:1400px; height:780px;margin:auto;top:0px"></div>
     <script>
-        var chart_db2d2ab9b6734d4483157222e11e0faf = echarts.init(
-            document.getElementById('db2d2ab9b6734d4483157222e11e0faf'), 'light', {renderer: 'canvas'});
-        var option_db2d2ab9b6734d4483157222e11e0faf = {
+        var chart_25c2836f90124d5ea5c0eacec9449cc8 = echarts.init(
+            document.getElementById('25c2836f90124d5ea5c0eacec9449cc8'), 'light', {renderer: 'canvas'});
+        var option_25c2836f90124d5ea5c0eacec9449cc8 = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -220,7 +220,7 @@
             "itemWidth": 25,
             "itemHeight": 14,
             "textStyle": {
-                "fontSize": 12
+                "fontSize": 17
             }
         }
     ],
@@ -238,11 +238,22 @@
     },
     "xAxis": [
         {
+            "type": "category",
+            "name": "\u6307\u6807\u7c7b\u578b",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -268,11 +279,27 @@
     ],
     "yAxis": [
         {
+            "type": "value",
+            "name": "\u6570\u503c",
             "show": true,
             "scale": false,
             "nameLocation": "end",
             "nameGap": 15,
+            "nameTextStyle": {
+                "fontSize": 17
+            },
             "gridIndex": 0,
+            "axisTick": {
+                "show": true,
+                "alignWithLabel": false,
+                "inside": false
+            },
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "fontSize": 17
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -297,12 +324,15 @@
             "padding": 5,
             "itemGap": 10,
             "textStyle": {
-                "fontSize": 25
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "fontSize": 16
             }
         }
     ]
 };
-        chart_db2d2ab9b6734d4483157222e11e0faf.setOption(option_db2d2ab9b6734d4483157222e11e0faf);
+        chart_25c2836f90124d5ea5c0eacec9449cc8.setOption(option_25c2836f90124d5ea5c0eacec9449cc8);
     </script>
 </body>
 </html>
